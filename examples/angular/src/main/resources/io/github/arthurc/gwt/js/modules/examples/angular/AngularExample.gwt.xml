@@ -1,0 +1,5 @@
+<module rename-to="angularexample">
+    <inherits name="io.github.arthurc.gwt.js.modules.angular.Angular" />
+
+    <entry-point class="io.github.arthurc.gwt.js.modules.examples.angular.client.AngularEntry" />
+</module>

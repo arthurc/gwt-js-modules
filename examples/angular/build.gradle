@@ -1,0 +1,9 @@
+dependencies {
+    provided project(':angular-1.4.8')
+}
+
+task(gwtCompile, dependsOn: 'classes', type: JavaExec) {
+    main = 'com.google.gwt.dev.Compiler'
+    classpath = sourceSets.main.compileClasspath
+    args '-generateJsInteropExports', '-style', 'DETAILED', 'io.github.arthurc.gwt.js.modules.examples.angular.AngularExample'
+}
